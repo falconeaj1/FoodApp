@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasty Recipe Finder</title>
+    <link rel="icon" href="images/mushroom.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #search-button {
+            font-size: 1.5em;
+            padding: 0.5em 1em;
+        }  
+        .kitchen-tools ul {
+            list-style: disc;
+            padding-left: 20px;
+        } 
+        .kitchen-tools li {
+            margin-bottom: 4px;
+            
+        }
+        #recipe-input {
+            width: 50%;
+            font-size: 1.5em;
+            padding: 0.5em;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tasty Recipe Finder</h1>
+        <input type="text" id="recipe-input" placeholder="Search for a recipe">
+        <button id="search-button">Search Recipes</button>
+        <div id="results"></div>
+
+        <div id="loading" style="display: none;">Loading...</div>
+        <div id="cart"></div>
+        <div id="grocery-list"></div>
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul class="cart-list"></ul>
+            <h3>Total Ingredients:</h3>
+            <pre id="total-ingredients"></pre>
+          </div>
+    </div>
+    <script type="module" src="./recipeSearch.js"></script>
+</body>
+</html>
