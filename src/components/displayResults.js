@@ -1,6 +1,6 @@
-import { apiKey } from "./config.js";
-import { gptKey } from "./config.js";
-import { addToCart } from "./cart.js";
+import { apiKey } from "../config.js";
+import { gptKey } from "../config.js";
+import { addToCart } from "../cart.js";
 
 const resultsDiv = document.getElementById("results");
 

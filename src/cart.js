@@ -32,25 +32,6 @@ export function removeFromCart(index) {
   renderCart();
 }
 
-// export function updateCartDisplay() {
-//   const cartDiv = document.getElementById("cart");
-//   cartDiv.innerHTML = "<h3>Cart</h3>";
-//   cart.forEach((recipeItems) => {
-//     const cartItem = document.createElement("div");
-//     cartItem.innerHTML = `
-//         <img src="${recipeItems[0].recipeImage}" alt="${recipeItems[0].recipeTitle}" title="${recipeItems[0].recipeSummary}" width="50" height="50">
-//         <h4>${recipeItems[0].recipeTitle}</h4>
-//         <button class="remove-from-cart">Remove</button>
-//         `;
-//     cartItem
-//       .querySelector(".remove-from-cart")
-//       .addEventListener("click", () => {
-//         removeFromCart(recipeItems[0]);
-//       });
-//     cartDiv.appendChild(cartItem);
-//   });
-//   updateGroceryList();
-// }
 export function updateCartDisplay() {
   const cartDiv = document.getElementById("cart");
   cartDiv.innerHTML = "<h3>Cart</h3>";
