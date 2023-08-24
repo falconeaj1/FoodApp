@@ -1,5 +1,5 @@
-import { apiKey } from './config.js';
-import { displayResults } from './displayResults.js';
+import { apiKey } from './utils/config.js';
+import { displayResults } from './components/displayResults.js';
 
 const recipeInput = document.getElementById("recipe-input");
 const searchButton = document.getElementById("search-button");
