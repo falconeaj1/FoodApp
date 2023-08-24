@@ -1,6 +1,6 @@
 TODO:
 # Fill in this README
-
+```
 FoodApp/
 │
 ├── src/
@@ -46,3 +46,4 @@ FoodApp/
 ├── package.json
 ├── package-lock.json
 └── LICENSE
+```
