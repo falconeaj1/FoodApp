@@ -3,7 +3,20 @@ TODO:
 ```
 FoodApp/
 │
+├── client/                  # Frontend code (React)
+│   ├── src/
+│   │   ├── components/
+│   │   ├── views/
+│   │   ├── assets/
+│   │   ├── utils/
+│   │   ├── services/
+│   │   └── App.js
+│   └── package.json
+│
+└── server/                  # Backend code (e.g., Express)│
+|
 ├── src/
+| |
 │ ├── assets/ # Static files like images, fonts, etc.
 │ │ ├── images/
 │ │ └── fonts/

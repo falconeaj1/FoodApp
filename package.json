@@ -1,5 +1,27 @@
 {
   "dependencies": {
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
     "http-server": "^14.1.1"
-  }
+  },
+  "name": "foodapp",
+  "description": "TODO: # Fill in this README ``` FoodApp/ │ ├── src/ │ ├── assets/ # Static files like images, fonts, etc. │ │ ├── images/ │ │ └── fonts/ │ │ │ ├── components/ # Reusable UI components (e.g., Button, InputField). │ │ │ ├── views/ # Larger components representing pages or views. │ │ │ ├── services/ # Services like API calls, database access, etc. │ │ ├── api/ │ │ │ ├── spoonacular.js │ │ │ └── instacart.js │ │ └── database.js │ │ │ ├── models/ # Data models (e.g., Recipe, User). │ │ │ ├── utils/ # Utility functions and constants. │ │ │ ├── store/ # If using a state management library like Redux. │ │ ├── actions/ │ │ ├── reducers/ │ │ └── index.js │ │ │ ├── App.js # Main App component. │ └── index.js # Entry point for your app. │ ├── tests/ │ ├── unit/ │ └── integration/ │ ├── public/ # Public assets and the main HTML file. │ ├── index.html │ └── favicon.ico │ ├── config/ # Configuration files (e.g., for webpack, babel). │ ├── node_modules/ # Dependencies. │ ├── README.md ├── package.json ├── package-lock.json └── LICENSE ```",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falconeaj1/FoodApp.git"
+  },
+  "author": "Andrew Falcone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/falconeaj1/FoodApp/issues"
+  },
+  "homepage": "https://github.com/falconeaj1/FoodApp#readme"
 }
