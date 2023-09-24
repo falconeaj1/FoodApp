@@ -1,64 +1,21 @@
-import React, { useState, useEffect } from "react";
-import Recipe from "./Recipe";
-import "./Recipe.css";
-import axios from "axios";
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import HomePage from "../pages/HomePage"
+import SearchPage from "../pages/SearchPage";
+// import CartPage from "../pages/CartPage"
+// import SettingsPage from "../pages/SettingsPage";
 
-const App = () => {
-  const [recipes, setRecipes] = useState([]);
-  const [search, setSearch] = useState([]);
-  const [query, setQuery] = useState("food");
-
-  const getRecipes = async () => {
-    if (!query.trim()) {
-      setRecipes([]);
-      return;
-    }
-    try {
-      const response = await axios.get(
-        `http://localhost:5000/recipes/${query}`
-      );
-      console.log(response.data);
-      setRecipes(response.data);
-    } catch (error) {
-      console.error("Error fetching recipes:", error);
-    }
-  };
-
-  useEffect(() => {
-    getRecipes();
-  }, [query]);
-
-  const getSearch = (e) => {
-    e.preventDefault();
-    setQuery(search);
-    setSearch("");
-  };
+function App() {
   return (
-    <div className="App">
-      <form onSubmit={getSearch} className="search-form">
-        <input
-          className="search-bar"
-          type="text"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <button className="search-button" type="submit">
-          Search
-        </button>
-      </form>
-      <div className="recipes">
-        {recipes.map((recipe) => (
-          <Recipe
-            key={recipe.recipe.label}
-            title={recipe.recipe.label}
-            image={recipe.recipe.image}
-            ingredients={recipe.recipe.ingredients}
-          />
-        ))}
-      </div>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/" exact component={SearchPage} />
+        <Route path="/" exact component={CartPage} />
+        <Route path="/" exact component={SettingsPage} />
+      </Switch>
+    </Router>
   );
-};
+}
 
 export default App;

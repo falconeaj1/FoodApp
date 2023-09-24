@@ -1,1 +1,1 @@
-Tutorial stuff from Code with Ishraq
+To start server run `npm run start-dev`
